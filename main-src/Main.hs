@@ -12,6 +12,8 @@ main = do
     putStrLn "Have a good day!"
 
     args <- getArgs
+    putStrLn "Args:"
+    putStrLn $ unlines args
     let [[t], fn] = args
     case t of
         'C' -> parseFromFile N.parseCodeunit fn >>= printResult

@@ -1,24 +1,24 @@
 module Navision where
 
-import Text.ParserCombinators.Parsec
-import Control.Monad (liftM)
-import Control.Applicative ((<$), (<*))
-import Data.Char (isHexDigit)
+import           Control.Applicative           ((<$), (<*))
+import           Control.Monad                 (liftM)
+import           Data.Char                     (isHexDigit)
+import           Text.ParserCombinators.Parsec
 
 -- * Navision application datatypes.
 
-data CodeunitObject = CodeunitObject { objectId :: Int,
-                                       objectName :: String,
+data CodeunitObject = CodeunitObject { objectId         :: Int,
+                                       objectName       :: String,
                                        objectProperties :: [Property],
-                                       properties :: [Property],
-                                       code :: String
+                                       properties       :: [Property],
+                                       code             :: String
                                        } deriving (Show)
 
-data MenuSuiteObject = MenuSuiteObject { menuSuiteId         :: Int,
-                                         menuSuiteName       :: String,
+data MenuSuiteObject = MenuSuiteObject { menuSuiteId               :: Int,
+                                         menuSuiteName             :: String,
                                          menuSuiteObjectProperties :: [Property],
-                                         menusuiteProperties :: (),
-                                         menuNodes           :: [MenuNode]
+                                         menusuiteProperties       :: (),
+                                         menuNodes                 :: [MenuNode]
                                        } deriving (Show)
 
 data Property = CaptionML [MultiLanguage]
@@ -49,7 +49,7 @@ data Property = CaptionML [MultiLanguage]
 
 data MultiLanguage = MultiLanguage String String deriving (Show)
 data TableDataPermission = TableDataPermission Int [TableDataPermissionFlag] deriving (Eq, Show)
-data MenuNode = MenuNode MenuNodeType GUID [Property] deriving (Show)
+data MenuNode = MenuNode (Maybe MenuNodeType) GUID [Property] deriving (Show)
 
 data RunObjectType = Codeunit
                    | DataPort
@@ -215,12 +215,12 @@ parseCodeunit = do
     i <- liftM read (lexeme $ many1 digit)
     n <- parseBracketString <|> parsePlainObjectName
     (ps, cps, c) <- parseSection $ do
-                        ps  <- lexeme (string "OBJECT-PROPERTIES")
-                            >> parseSection (sepEndBy (try parseObjectProperty) (lexeme $ oneOf ";}"))
-                        cps <- lexeme $ string "PROPERTIES"
-                            >> parseSection (sepEndBy (try parseCodeunitProperty) (lexeme $ oneOf ";}"))
-                        c   <- lexeme $ string "CODE"
-                            >> parseSection (return "")  -- TODO: parseCode
+                        _   <- lexeme (string "OBJECT-PROPERTIES")
+                        ps  <- parseSection (sepEndBy (try parseObjectProperty) (lexeme $ oneOf ";}"))
+                        _   <- lexeme $ string "PROPERTIES"
+                        cps <- parseSection (sepEndBy (try parseCodeunitProperty) (lexeme $ oneOf ";}"))
+                        _   <- lexeme $ string "CODE"
+                        c   <- parseSection (return "")  -- TODO: parseCode
                         return (ps, cps, c)
     return $ CodeunitObject i n ps cps c
 
@@ -231,18 +231,18 @@ parseMenuSuite = do
     i <- liftM read (lexeme $ many1 digit)
     n <- parseBracketString <|> parsePlainObjectName
     (ps, mps, ns) <- parseSection $ do
-                        ps  <- lexeme $ string "OBJECT-PROPERTIES"
-                            >> parseSection (sepEndBy (try parseObjectProperty) (lexeme $ oneOf ";}"))
-                        mps <- lexeme $ string "PROPERTIES"
-                            >> parseSection (return ())
-                        ns  <- lexeme $ string "MENUNODES"
-                            >> parseSection (many parseMenuNode)
+                        _   <- lexeme $ string "OBJECT-PROPERTIES"
+                        ps  <- parseSection (sepEndBy (try parseObjectProperty) (lexeme $ oneOf ";}"))
+                        _   <- lexeme $ string "PROPERTIES"
+                        mps <- parseSection (return ())
+                        _   <- lexeme $ string "MENUNODES"
+                        ns  <- parseSection (many parseMenuNode)
                         return (ps, mps, ns)
     return $ MenuSuiteObject i n ps mps ns
 
 parseMenuNode :: Parser MenuNode
 parseMenuNode = parseSection $ do
-    t <- parseMenuNodeType
+    t <- optionMaybe parseMenuNodeType
     _ <- lexeme $ char ';'
     g <- parseGUID
     ps <- option [] (lexeme (char ';') >> sepEndBy parseMenuNodeProperty (lexeme $ char ';'))

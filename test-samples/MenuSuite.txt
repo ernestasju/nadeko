@@ -1,0 +1,929 @@
+OBJECT MenuSuite 1090 Dept - Company
+{
+  OBJECT-PROPERTIES
+  {
+    Date=15-06-01;
+    Time=13:54:29;
+    Modified=Yes;
+    Version List=GA-11,FI-122,FI-169,PS,EURO001,AMP,MPK105,MPK31,MPK30,MPK32,MPK37,MPK38,MPK99,MPK104,MPK206,MPK154,MPK245,MPK249;
+  }
+  PROPERTIES
+  {
+  }
+  MENUNODES
+  {
+    { MenuItem       ;[{A5A266C6-7C52-4B1C-94BE-C2B330970B96}] ;Name=Prod. Order Types;
+                                                                CaptionML=[ENU=Prod. Order Types;
+                                                                           LTH=Gam. užsakymo tipai];
+                                                                MemberOfMenu=[{4444D15F-6F71-4058-A823-C35BD171B04A}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=17026001;
+                                                                ParentNodeID=[{8962DD94-AFD6-4010-9C18-1AA2BDA8CEBD}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{00000000-0000-0000-0000-000000000000}];
+                                                                DepartmentCategory=Administration }
+    {                ;[{8906C373-F88B-4294-B4F9-233544047E1E}] ;NextNodeID=[{A5A266C6-7C52-4B1C-94BE-C2B330970B96}] }
+    { MenuItem       ;[{362087E8-1D92-4C99-9A73-C32FA20E34C7}] ;Name=Production Overview;
+                                                                CaptionML=[ENU=Production Overview;
+                                                                           LTH=Gamybos peržvalga];
+                                                                MemberOfMenu=[{4444D15F-6F71-4058-A823-C35BD171B04A}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=17026020;
+                                                                ParentNodeID=[{4CB5D68B-2D8E-4EE6-9231-D7ECBF626F84}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{A300108E-3EDA-4EBD-8BF1-34106AA05809}];
+                                                                DepartmentCategory=Tasks }
+    {                ;[{9E9E4532-9DEA-415D-BD34-D7ABE164D867}] ;NextNodeID=[{362087E8-1D92-4C99-9A73-C32FA20E34C7}] }
+    {                ;[{DF601C8A-07F7-4841-8929-9F2065BCB302}] ;NextNodeID=[{C62F1FEB-BB42-4038-B801-BD744D7C16FA}] }
+    { MenuGroup      ;[{C62F1FEB-BB42-4038-B801-BD744D7C16FA}] ;Name=Loans;
+                                                                CaptionML=[ENU=Loans;
+                                                                           LTH=Paskolos];
+                                                                MemberOfMenu=[{F8D2429D-034B-4C58-9B5E-81BE962DB1BC}];
+                                                                ParentNodeID=[{F8D2429D-034B-4C58-9B5E-81BE962DB1BC}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{AFF75C29-1C49-4CAA-9256-7B3927555E32}];
+                                                                FirstChild=[{7FDB0FE9-A66A-4394-B453-287DE966A6CE}];
+                                                                IsDepartmentPage=Yes }
+    { MenuItem       ;[{7FDB0FE9-A66A-4394-B453-287DE966A6CE}] ;Name=Loan List;
+                                                                CaptionML=[ENU=Loan List;
+                                                                           LTH=Paskolų sąrašas];
+                                                                MemberOfMenu=[{F8D2429D-034B-4C58-9B5E-81BE962DB1BC}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=17026026;
+                                                                ParentNodeID=[{C62F1FEB-BB42-4038-B801-BD744D7C16FA}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{50E17A43-4D86-4F67-8746-40889587B0BD}];
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{50E17A43-4D86-4F67-8746-40889587B0BD}] ;Name=Loan Journal;
+                                                                CaptionML=[ENU=Loan Journal;
+                                                                           LTH=Paskolų žurnalas];
+                                                                MemberOfMenu=[{F8D2429D-034B-4C58-9B5E-81BE962DB1BC}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=17026031;
+                                                                ParentNodeID=[{C62F1FEB-BB42-4038-B801-BD744D7C16FA}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{26DB9DFE-C3AE-4CA0-BFEA-574CC8E37A44}];
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{26DB9DFE-C3AE-4CA0-BFEA-574CC8E37A44}] ;Name=Loan Ledger Entries;
+                                                                CaptionML=[ENU=Loan Ledger Entries;
+                                                                           LTH=Paskolų knygos įrašai];
+                                                                MemberOfMenu=[{F8D2429D-034B-4C58-9B5E-81BE962DB1BC}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=17026028;
+                                                                ParentNodeID=[{C62F1FEB-BB42-4038-B801-BD744D7C16FA}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{79CC3180-5241-480D-9340-D5C494354A26}];
+                                                                DepartmentCategory=History }
+    { MenuItem       ;[{79CC3180-5241-480D-9340-D5C494354A26}] ;Name=Create Sales Invoices for Inte;
+                                                                CaptionML=[ENU=Create Sales Invoices for Interests;
+                                                                           LTH=Sukurti palūkanų pardavimo SF];
+                                                                MemberOfMenu=[{F8D2429D-034B-4C58-9B5E-81BE962DB1BC}];
+                                                                RunObjectType=Report;
+                                                                RunObjectID=17026005;
+                                                                ParentNodeID=[{C62F1FEB-BB42-4038-B801-BD744D7C16FA}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{1A928C07-5BD9-4BA2-A3E4-4C09DD6450B7}];
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{1A928C07-5BD9-4BA2-A3E4-4C09DD6450B7}] ;Name=Loan Contract Templates;
+                                                                CaptionML=[ENU=Loan Contract Templates;
+                                                                           LTH=Paskolų sutarčių šablonai];
+                                                                MemberOfMenu=[{F8D2429D-034B-4C58-9B5E-81BE962DB1BC}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=17026029;
+                                                                ParentNodeID=[{C62F1FEB-BB42-4038-B801-BD744D7C16FA}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{00000000-0000-0000-0000-000000000000}];
+                                                                DepartmentCategory=Administration }
+    {                ;[{DDC8FCC4-ED51-497B-9CD6-EB2276DF350A}] ;NextNodeID=[{5FD9E549-13B0-4F67-9FF1-7EC58D859435}] }
+    { MenuItem       ;[{5FD9E549-13B0-4F67-9FF1-7EC58D859435}] ;Name=Omnitel Invoice Import;
+                                                                CaptionML=[ENU=Omnitel Invoice Import;
+                                                                           LTH=Omnitel sąskaitos importas];
+                                                                MemberOfMenu=[{03134937-C76A-4D80-A8B2-FF6458E180EB}];
+                                                                RunObjectType=XMLport;
+                                                                RunObjectID=50000;
+                                                                ParentNodeID=[{A2FAEA0C-91E4-40EF-8294-F1A0484E58FE}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{3E2FEC16-BE73-41A6-94E5-BAFFDE0CFB12}];
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{E768293D-3666-4CB2-B262-BAC18617443E}] ;Name=Phones;
+                                                                CaptionML=[ENU=Phones;
+                                                                           LTH=Darbuotojų telefonai];
+                                                                MemberOfMenu=[{03134937-C76A-4D80-A8B2-FF6458E180EB}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=50000;
+                                                                ParentNodeID=[{387B2D8D-4249-4D63-BE9C-850416EA6E81}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{A667BB31-82CE-4567-B788-C59C3BDAA804}];
+                                                                DepartmentCategory=Lists }
+    {                ;[{88286E04-7EA7-42ED-BD96-8B155EAB4235}] ;NextNodeID=[{E768293D-3666-4CB2-B262-BAC18617443E}] }
+    {                ;[{9D421E54-688E-48E4-8876-0B3BAA758ED8}] ;NextNodeID=[{AAAC2FE2-E376-45F8-9BD4-6608324DBDD8}] }
+    { MenuItem       ;[{AAAC2FE2-E376-45F8-9BD4-6608324DBDD8}] ;Name=Control Add-ins;
+                                                                CaptionML=[ENU=Control Add-ins;
+                                                                           LTH=Valdymo papildiniai];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=9820;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{7D6561AD-B77E-441E-BAE9-B645DA8DB8C3}] ;Name=Change Password;
+                                                                CaptionML=[ENU=Change Password;
+                                                                           LTH=Pakeisti slaptažodį];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=9809;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{2FC554D4-DBF9-48AD-A8BA-C6116663FD5C}];
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{2FC554D4-DBF9-48AD-A8BA-C6116663FD5C}] ;Name=Online Document Storage Configuration;
+                                                                CaptionML=[ENU=Online Document Storage Configuration;
+                                                                           LTH=Internetinės duomenų saugyklos konfigūravimas];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=9551;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{6C152B6F-B672-421C-BE50-83E98C8A2301}] ;Name=Account Schedule KPI Web Servi;
+                                                                CaptionML=[ENU=Account Schedule KPI Web Service Setup;
+                                                                           LTH=Sąskaitų suvestinės KPI tinklo tarnybos sąranka];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=195;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Administration }
+    { MenuItem       ;[{7234476B-98CB-47D4-BABA-CA8ED3D7CD56}] ;Name=Acc. Sched. KPI Web Service;
+                                                                CaptionML=[ENU=Account Schedule KPI Web Service;
+                                                                           LTH=Sąskaitų suvestinės KPI tinklo tarnyba];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=197;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Administration }
+    { MenuItem       ;[{BB2D12FC-2EEB-4165-869B-098BBB42C6F6}] ;Name=Bank Export/Import Setup;
+                                                                CaptionML=[ENU=Bank Export/Import Setup;
+                                                                           LTH=Banko importavimo / eksportavimo nustatymas];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=1200;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{A5339620-831B-4C45-8A54-A1191F1C9AC3}] ;Name=Import From a Data File;
+                                                                CaptionML=ENU=Import From Data File;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=9900;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{FDE09CB3-6C41-4949-83FB-92ED15DE18D5}] ;Name=Export To Data File;
+                                                                CaptionML=ENU=Export To a Data File;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=9901;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    {                ;[{19A352FE-D90D-424E-B85F-CF3B8E98CF0E}] ;NextNodeID=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}] }
+    { Menu           ;[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}] ;Name=Žaliavos supirkimas;
+                                                                CaptionML=[ENU=Purchase of Raw Material;
+                                                                           LTH=Žaliavos supirkimas];
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                ParentNodeID=[{00000000-0000-0000-0000-000000000000}];
+                                                                Image=15;
+                                                                IsShortcut=No;
+                                                                Visible=Yes;
+                                                                Enabled=Yes;
+                                                                NextNodeID=[{00000000-0000-0000-0000-000000000000}];
+                                                                FirstChild=[{689E132C-AAC4-4998-818C-20DCF866835F}] }
+    { MenuGroup      ;[{689E132C-AAC4-4998-818C-20DCF866835F}] ;Name=VykdymasĄ!;
+                                                                CaptionML=LTH=Vykdymas;
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                ParentNodeID=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{CC63AAC0-46DB-4C84-8557-84761FFE19AB}];
+                                                                FirstChild=[{149B06CF-198D-475A-B56A-B38555D16DD4}] }
+    { MenuItem       ;[{149B06CF-198D-475A-B56A-B38555D16DD4}] ;Name=Pieno tiekėjo kortelė;
+                                                                CaptionML=[ENU=Milk Vendors;
+                                                                           LTH=Pieno tiekėjai];
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=50315;
+                                                                ParentNodeID=[{689E132C-AAC4-4998-818C-20DCF866835F}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{83909104-8417-4569-A87A-0D77A9D7C888}];
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{83909104-8417-4569-A87A-0D77A9D7C888}] ;Name=Pirkėjo kortelė;
+                                                                CaptionML=[ENU=Customers;
+                                                                           LTH=Pirkėjai];
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=22;
+                                                                ParentNodeID=[{689E132C-AAC4-4998-818C-20DCF866835F}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{96EAFB29-957E-43DE-B8D5-08F2354F7BB6}];
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{96EAFB29-957E-43DE-B8D5-08F2354F7BB6}] ;Name=Prekės kortelė;
+                                                                CaptionML=[ENU=Items;
+                                                                           LTH=Prekės];
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=31;
+                                                                ParentNodeID=[{689E132C-AAC4-4998-818C-20DCF866835F}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{72E51C5A-B8F8-4400-9810-62E5AB5BC948}];
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{72E51C5A-B8F8-4400-9810-62E5AB5BC948}] ;Name=Prekės žurnalas;
+                                                                CaptionML=[ENU=Item Journal;
+                                                                           LTH=Prekės žurnalas];
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=40;
+                                                                ParentNodeID=[{689E132C-AAC4-4998-818C-20DCF866835F}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{B2CAD06E-D946-4B78-AA31-89E089295786}];
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{B2CAD06E-D946-4B78-AA31-89E089295786}] ;Name=Supirkimo važtaraštis naujas;
+                                                                CaptionML=[ENU=Milk Purch. Waybills;
+                                                                           LTH=Supirkimo važtaraščiai];
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=50305;
+                                                                ParentNodeID=[{689E132C-AAC4-4998-818C-20DCF866835F}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{A8C4C522-6F2F-4169-82B2-CCB0ED8EF8C9}];
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{A8C4C522-6F2F-4169-82B2-CCB0ED8EF8C9}] ;Name=Supirkimo žiniaraštis;
+                                                                CaptionML=[ENU=Milk Purch. Statement List;
+                                                                           LTH=Supirkimo žiniaraščiai];
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=50021;
+                                                                ParentNodeID=[{689E132C-AAC4-4998-818C-20DCF866835F}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{2296D782-AF5C-4CF4-BAFB-3A6AA9031382}];
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{B06BD65F-B255-4F58-80ED-A5FD3B0E8440}] ;Name=Pardavimo SF;
+                                                                CaptionML=[ENU=Sales Invoices;
+                                                                           LTH=Pardavimo SF];
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=9301;
+                                                                ParentNodeID=[{689E132C-AAC4-4998-818C-20DCF866835F}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{A1190741-24FA-4979-BC83-CB836939F981}];
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{9F352D8E-4B8A-4FA4-A0DD-EE531AD9406B}] ;Name=Supirkimo kvito antraštė;
+                                                                CaptionML=[ENU=Milk Purch. Receipt List;
+                                                                           LTH=Supirkimo kvitai];
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=50041;
+                                                                ParentNodeID=[{689E132C-AAC4-4998-818C-20DCF866835F}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{00000000-0000-0000-0000-000000000000}];
+                                                                DepartmentCategory=Lists }
+    { MenuGroup      ;[{CC63AAC0-46DB-4C84-8557-84761FFE19AB}] ;Name=Ataskaitos;
+                                                                CaptionML=LTH=Ataskaitos;
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                ParentNodeID=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{CDFDDF2B-D369-47C6-A7F2-919FC8C77606}];
+                                                                FirstChild=[{3314B150-8A9A-42C1-9D42-2A43DDB7D4F5}] }
+    { MenuGroup      ;[{CDFDDF2B-D369-47C6-A7F2-919FC8C77606}] ;Name=IstorijaĄ!;
+                                                                CaptionML=LTH=Istorija;
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                ParentNodeID=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{6A0F7328-9908-4C4C-9FFC-60FBE3BCB7AE}];
+                                                                FirstChild=[{C6EC98EA-0B65-4F2D-A381-6433ACCC34FC}] }
+    { MenuItem       ;[{C6EC98EA-0B65-4F2D-A381-6433ACCC34FC}] ;Name=Įreg. supirkimo važtaraštis;
+                                                                CaptionML=[ENU=Posted Milk Purch. Waybills;
+                                                                           LTH=Įreg. supirkimo važtaraščiai];
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=50038;
+                                                                ParentNodeID=[{CDFDDF2B-D369-47C6-A7F2-919FC8C77606}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{9BCD2A6E-BA6E-47CE-AD3E-4C51F391B29E}];
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{9BCD2A6E-BA6E-47CE-AD3E-4C51F391B29E}] ;Name=Įreg. supirkimo žiniaraštis;
+                                                                CaptionML=[ENU=Posted Milk Purch. Statements;
+                                                                           LTH=Įreg. supirkimo žiniaraščiai];
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=50046;
+                                                                ParentNodeID=[{CDFDDF2B-D369-47C6-A7F2-919FC8C77606}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{2E72E5BA-E637-429A-8456-FD80B99D49BA}];
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{2E72E5BA-E637-429A-8456-FD80B99D49BA}] ;Name=Įregistruoto kvito antraštė;
+                                                                CaptionML=[ENU=Posted Milk Purch. Receipt List;
+                                                                           LTH=Įregistruoti kvitai];
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=50095;
+                                                                ParentNodeID=[{CDFDDF2B-D369-47C6-A7F2-919FC8C77606}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{2429C419-BEE4-4438-BA49-53E80E85FE95}];
+                                                                DepartmentCategory=Lists }
+    { MenuGroup      ;[{6A0F7328-9908-4C4C-9FFC-60FBE3BCB7AE}] ;Name=Periodinė veikla;
+                                                                CaptionML=LTH=Periodinė veikla;
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                ParentNodeID=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{771AEE1F-A5F3-4CA7-84FA-24C4BE1E693E}];
+                                                                FirstChild=[{E26D50BE-6686-4FF0-826B-C1444ABF804C}] }
+    { MenuItem       ;[{E26D50BE-6686-4FF0-826B-C1444ABF804C}] ;Name=PT duomenų importas (naujai);
+                                                                CaptionML=LTH=PT duomenų importas;
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Report;
+                                                                RunObjectID=50481;
+                                                                ParentNodeID=[{6A0F7328-9908-4C4C-9FFC-60FBE3BCB7AE}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{E0982C3C-7464-434D-89F5-CC7B698D91C0}] }
+    { MenuItem       ;[{E0982C3C-7464-434D-89F5-CC7B698D91C0}] ;Name=Valyti PT;
+                                                                CaptionML=LTH=Valyti PT;
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Report;
+                                                                RunObjectID=50179;
+                                                                ParentNodeID=[{6A0F7328-9908-4C4C-9FFC-60FBE3BCB7AE}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{9DA4FD91-BEE2-4F5E-8B65-9DE15829FD7D}] }
+    { MenuItem       ;[{9DA4FD91-BEE2-4F5E-8B65-9DE15829FD7D}] ;Name=Kombinuoti važtaraščiai;
+                                                                CaptionML=LTH=Kombinuoti važtaraščiai;
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Report;
+                                                                RunObjectID=295;
+                                                                ParentNodeID=[{6A0F7328-9908-4C4C-9FFC-60FBE3BCB7AE}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{ADEE0C8C-D73A-4AE8-9D21-210C4DA7603A}] }
+    { MenuItem       ;[{ADEE0C8C-D73A-4AE8-9D21-210C4DA7603A}] ;Name=Naik. pard. užsak. (jei yra SF;
+                                                                CaptionML=LTH=Naik. pard. užsak. (jei yra SF);
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Report;
+                                                                RunObjectID=299;
+                                                                ParentNodeID=[{6A0F7328-9908-4C4C-9FFC-60FBE3BCB7AE}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{84A791C2-725D-4A5D-B219-03D1508C2136}] }
+    { MenuItem       ;[{84A791C2-725D-4A5D-B219-03D1508C2136}] ;Name=Kombinuoti važtaraščiai;
+                                                                CaptionML=LTH=Kombinuoti važtaraščiai;
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Report;
+                                                                RunObjectID=50114;
+                                                                ParentNodeID=[{6A0F7328-9908-4C4C-9FFC-60FBE3BCB7AE}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{796B1CB6-2020-4872-945E-2AF0E6704F36}] }
+    { MenuItem       ;[{796B1CB6-2020-4872-945E-2AF0E6704F36}] ;Name=Naik.pirk.užsak(jei yra SF);
+                                                                CaptionML=LTH=Naik.pirk.užsak(jei yra SF);
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Report;
+                                                                RunObjectID=50115;
+                                                                ParentNodeID=[{6A0F7328-9908-4C4C-9FFC-60FBE3BCB7AE}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{0A2D1EE9-E9DF-4341-9FBA-5C181FE716BE}] }
+    { MenuItem       ;[{0A2D1EE9-E9DF-4341-9FBA-5C181FE716BE}] ;Name=Pieno prik.-pard. sutartis;
+                                                                CaptionML=LTH=Pieno prik.-pard. sutartis;
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Report;
+                                                                RunObjectID=50455;
+                                                                ParentNodeID=[{6A0F7328-9908-4C4C-9FFC-60FBE3BCB7AE}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{DF70E33E-C091-48BD-AC79-B55BFF8AE5C1}] }
+    { MenuItem       ;[{DF70E33E-C091-48BD-AC79-B55BFF8AE5C1}] ;Name=Atsk. suma į bendr. žurn eil.;
+                                                                CaptionML=LTH=Atsk. suma į bendr. žurn eil.;
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Report;
+                                                                RunObjectID=50454;
+                                                                ParentNodeID=[{6A0F7328-9908-4C4C-9FFC-60FBE3BCB7AE}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{5FE49982-51EE-4C54-B537-DBBE30046235}] }
+    { MenuItem       ;[{5FE49982-51EE-4C54-B537-DBBE30046235}] ;Name=Kurti kvitus;
+                                                                CaptionML=LTH=Kurti kvitus;
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Report;
+                                                                RunObjectID=17015780;
+                                                                ParentNodeID=[{6A0F7328-9908-4C4C-9FFC-60FBE3BCB7AE}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{29097318-23B3-43E1-8BCD-57A1516B76E7}];
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{29097318-23B3-43E1-8BCD-57A1516B76E7}] ;Name=Sukurti sąskaitas faktūras;
+                                                                CaptionML=LTH=Sukurti sąskaitas faktūras;
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Report;
+                                                                RunObjectID=17015781;
+                                                                ParentNodeID=[{6A0F7328-9908-4C4C-9FFC-60FBE3BCB7AE}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{00000000-0000-0000-0000-000000000000}];
+                                                                DepartmentCategory=Tasks }
+    { MenuGroup      ;[{771AEE1F-A5F3-4CA7-84FA-24C4BE1E693E}] ;Name=Nustatymai;
+                                                                CaptionML=LTH=Nustatymai;
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                ParentNodeID=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{00000000-0000-0000-0000-000000000000}];
+                                                                FirstChild=[{6B58CF76-4E60-4D9B-A813-1FEBE95DB7A1}] }
+    { MenuItem       ;[{6B58CF76-4E60-4D9B-A813-1FEBE95DB7A1}] ;Name=Pieno supirkimo nustatymai;
+                                                                CaptionML=[ENU=Pieno supirkimo nustatymai;
+                                                                           LTH=Pieno supirkimo nustatymai];
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=50036;
+                                                                ParentNodeID=[{771AEE1F-A5F3-4CA7-84FA-24C4BE1E693E}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{5BED7A5B-1DEF-46D6-8950-1E17040DF4B2}];
+                                                                DepartmentCategory=Administration }
+    { MenuItem       ;[{5BED7A5B-1DEF-46D6-8950-1E17040DF4B2}] ;Name=PSO nustatymai;
+                                                                CaptionML=[ENU=PSO nustatymai;
+                                                                           LTH=PSO nustatymai];
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=50086;
+                                                                ParentNodeID=[{771AEE1F-A5F3-4CA7-84FA-24C4BE1E693E}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{2A61A124-4F10-41A0-8188-E816B1B56864}];
+                                                                DepartmentCategory=Administration }
+    { MenuItem       ;[{2A61A124-4F10-41A0-8188-E816B1B56864}] ;Name=Pirkėjų kainų grupės;
+                                                                CaptionML=[ENU=Customer Price Groups;
+                                                                           LTH=Pirkėjų kainų grupės];
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=7;
+                                                                ParentNodeID=[{771AEE1F-A5F3-4CA7-84FA-24C4BE1E693E}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{F671331B-983B-4F5A-95A1-537F1227CFF2}];
+                                                                DepartmentCategory=Administration }
+    { MenuGroup      ;[{AFF75C29-1C49-4CAA-9256-7B3927555E32}] ;Name=Cost Management;
+                                                                CaptionML=[ENU=Cost Management;
+                                                                           LTH=Kaštų valdymas];
+                                                                MemberOfMenu=[{F8D2429D-034B-4C58-9B5E-81BE962DB1BC}];
+                                                                ParentNodeID=[{F8D2429D-034B-4C58-9B5E-81BE962DB1BC}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{B12180CF-0EFB-43AD-9118-7765E953AAFD}];
+                                                                FirstChild=[{E76B20C8-59EC-4625-AC25-EF7A9D37E5CF}];
+                                                                IsDepartmentPage=Yes }
+    { MenuItem       ;[{E76B20C8-59EC-4625-AC25-EF7A9D37E5CF}] ;Name=Cost Objects;
+                                                                CaptionML=[ENU=Cost Objects;
+                                                                           LTH=Kaštų objektai];
+                                                                MemberOfMenu=[{F8D2429D-034B-4C58-9B5E-81BE962DB1BC}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=50904;
+                                                                ParentNodeID=[{AFF75C29-1C49-4CAA-9256-7B3927555E32}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{79D06919-8CC0-4279-A9D8-B2E7F38A7CDB}];
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{79D06919-8CC0-4279-A9D8-B2E7F38A7CDB}] ;Name=Cost Drivers;
+                                                                CaptionML=[ENU=Cost Drivers;
+                                                                           LTH=Kaštų sukėlėjai];
+                                                                MemberOfMenu=[{F8D2429D-034B-4C58-9B5E-81BE962DB1BC}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=50901;
+                                                                ParentNodeID=[{AFF75C29-1C49-4CAA-9256-7B3927555E32}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{15F0FD82-1646-4385-BA46-71C757E45AB8}];
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{15F0FD82-1646-4385-BA46-71C757E45AB8}] ;Name=Activities;
+                                                                CaptionML=[ENU=Activities;
+                                                                           LTH=Veiklos];
+                                                                MemberOfMenu=[{F8D2429D-034B-4C58-9B5E-81BE962DB1BC}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=50900;
+                                                                ParentNodeID=[{AFF75C29-1C49-4CAA-9256-7B3927555E32}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{E6D49C71-94A3-49E0-8377-69C028E49B92}];
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{9B9B1449-D261-42F5-8148-DD5D40369C6B}] ;Name=Cost Models;
+                                                                CaptionML=[ENU=Cost Models;
+                                                                           LTH=Kaštų modeliai];
+                                                                MemberOfMenu=[{F8D2429D-034B-4C58-9B5E-81BE962DB1BC}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=50917;
+                                                                ParentNodeID=[{AFF75C29-1C49-4CAA-9256-7B3927555E32}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{00000000-0000-0000-0000-000000000000}];
+                                                                DepartmentCategory=Administration }
+    { MenuItem       ;[{E6D49C71-94A3-49E0-8377-69C028E49B92}] ;Name=G/L Account Assignment;
+                                                                CaptionML=[ENU=G/L Account Assignment;
+                                                                           LTH=DK sąskaitų priskyrimas];
+                                                                MemberOfMenu=[{F8D2429D-034B-4C58-9B5E-81BE962DB1BC}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=50902;
+                                                                ParentNodeID=[{AFF75C29-1C49-4CAA-9256-7B3927555E32}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{1345FD27-AF6E-46E5-93B2-ABDE7FBFBA3B}];
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{1345FD27-AF6E-46E5-93B2-ABDE7FBFBA3B}] ;Name=Activities Assignment;
+                                                                CaptionML=[ENU=Activities Assignment;
+                                                                           LTH=Veiklų priskyrimas];
+                                                                MemberOfMenu=[{F8D2429D-034B-4C58-9B5E-81BE962DB1BC}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=50903;
+                                                                ParentNodeID=[{AFF75C29-1C49-4CAA-9256-7B3927555E32}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{2890EC01-8650-4CF8-9FB9-479A1862D716}];
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{2890EC01-8650-4CF8-9FB9-479A1862D716}] ;Name=Cost Driver Journal;
+                                                                CaptionML=[ENU=Cost Driver Journal;
+                                                                           LTH=Kaštų sukėlėjų žurnalas];
+                                                                MemberOfMenu=[{F8D2429D-034B-4C58-9B5E-81BE962DB1BC}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=50905;
+                                                                ParentNodeID=[{AFF75C29-1C49-4CAA-9256-7B3927555E32}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{57FF784F-8307-4F2E-B582-7339497F6109}];
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{57FF784F-8307-4F2E-B582-7339497F6109}] ;Name=Cost Driver Journal;
+                                                                CaptionML=[ENU=Cost Assignment Journal;
+                                                                           LTH=Kaštų priskyrimo žurnalas];
+                                                                MemberOfMenu=[{F8D2429D-034B-4C58-9B5E-81BE962DB1BC}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=50906;
+                                                                ParentNodeID=[{AFF75C29-1C49-4CAA-9256-7B3927555E32}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{578F1F13-6A08-4C40-A690-2E9C12A9A01A}];
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{578F1F13-6A08-4C40-A690-2E9C12A9A01A}] ;Name=Create Assignment Journal Line;
+                                                                CaptionML=[ENU=Create Assignment Journal Lines;
+                                                                           LTH=Kurti priskyrimo žurnalo eilutes];
+                                                                MemberOfMenu=[{F8D2429D-034B-4C58-9B5E-81BE962DB1BC}];
+                                                                RunObjectType=Report;
+                                                                RunObjectID=50901;
+                                                                ParentNodeID=[{AFF75C29-1C49-4CAA-9256-7B3927555E32}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{9B9B1449-D261-42F5-8148-DD5D40369C6B}];
+                                                                DepartmentCategory=Reports and Analysis }
+    {                ;[{181A7047-85F0-4388-BC43-78DA9152F202}] ;NextNodeID=[{114EFC34-E4E0-48AF-9B8D-C49B5A5077AD}] }
+    { MenuItem       ;[{114EFC34-E4E0-48AF-9B8D-C49B5A5077AD}] ;Name=Import Currency Exchange Rate;
+                                                                CaptionML=[ENU=Import Currency Exchange Rate;
+                                                                           LTH=Importuoti EUR valiutos kursą];
+                                                                MemberOfMenu=[{F8D2429D-034B-4C58-9B5E-81BE962DB1BC}];
+                                                                RunObjectType=Report;
+                                                                RunObjectID=17025852;
+                                                                ParentNodeID=[{5858D635-8860-415E-8A06-3136300DC59B}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{00000000-0000-0000-0000-000000000000}];
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{A1190741-24FA-4979-BC83-CB836939F981}] ;Name=Credit Memos;
+                                                                CaptionML=[ENU=Sales Credit Memos;
+                                                                           LTH=Pardavimo grąžinimo pažymos];
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=9302;
+                                                                ParentNodeID=[{689E132C-AAC4-4998-818C-20DCF866835F}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{65030068-9C1A-44C1-B407-9E1338FE60F2}];
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{2296D782-AF5C-4CF4-BAFB-3A6AA9031382}] ;Name=Orders;
+                                                                CaptionML=[ENU=Sales Orders;
+                                                                           LTH=Pardavimo užsakymai];
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=9305;
+                                                                ParentNodeID=[{689E132C-AAC4-4998-818C-20DCF866835F}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{B06BD65F-B255-4F58-80ED-A5FD3B0E8440}];
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{65030068-9C1A-44C1-B407-9E1338FE60F2}] ;Name=Orders;
+                                                                CaptionML=[ENU=Purchase Orders;
+                                                                           LTH=Pirkimo užsakymai];
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=9307;
+                                                                ParentNodeID=[{689E132C-AAC4-4998-818C-20DCF866835F}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{55EEEECC-FF75-46D3-A947-302449F212A6}];
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{55EEEECC-FF75-46D3-A947-302449F212A6}] ;Name=Invoices;
+                                                                CaptionML=[ENU=Purchase Invoices;
+                                                                           LTH=Pirkimo SF];
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=9308;
+                                                                ParentNodeID=[{689E132C-AAC4-4998-818C-20DCF866835F}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{5E6C2F5F-E9EF-49B3-87C1-2A9A2DF70742}];
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{5E6C2F5F-E9EF-49B3-87C1-2A9A2DF70742}] ;Name=Credit Memos;
+                                                                CaptionML=[ENU=Purchase Credit Memos;
+                                                                           LTH=Pirkimo grąžinimo pažymos];
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=9309;
+                                                                ParentNodeID=[{689E132C-AAC4-4998-818C-20DCF866835F}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{9F352D8E-4B8A-4FA4-A0DD-EE531AD9406B}];
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{3314B150-8A9A-42C1-9D42-2A43DDB7D4F5}] ;Name=Staistika ŽŪM pieno supirkimas;
+                                                                CaptionML=LTH=Staistika ŽŪM pieno supirkimas;
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Report;
+                                                                RunObjectID=17015787;
+                                                                ParentNodeID=[{CC63AAC0-46DB-4C84-8557-84761FFE19AB}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{688F490F-A72A-4E41-B95D-1614C6F5D206}];
+                                                                DepartmentCategory=Reports and Analysis }
+    { MenuItem       ;[{688F490F-A72A-4E41-B95D-1614C6F5D206}] ;Name=Statistika ŽŪS-13 nauja;
+                                                                CaptionML=LTH=Statistika ŽŪS-13 nauja;
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Report;
+                                                                RunObjectID=17015788;
+                                                                ParentNodeID=[{CC63AAC0-46DB-4C84-8557-84761FFE19AB}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{9CA68C7F-2236-4D74-8956-1E4BCCC4F365}];
+                                                                DepartmentCategory=Reports and Analysis }
+    { MenuItem       ;[{9CA68C7F-2236-4D74-8956-1E4BCCC4F365}] ;Name=Pieno supirkimo mėn. K8;
+                                                                CaptionML=LTH=Pieno supirkimo mėn. K8;
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Report;
+                                                                RunObjectID=17015789;
+                                                                ParentNodeID=[{CC63AAC0-46DB-4C84-8557-84761FFE19AB}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{E43D9897-A3B4-4E6D-BE64-793F14246032}];
+                                                                DepartmentCategory=Reports and Analysis }
+    { MenuItem       ;[{F671331B-983B-4F5A-95A1-537F1227CFF2}] ;Name=PT Nustatymai;
+                                                                CaptionML=[ENU=PT Nustatymai;
+                                                                           LTH=PT Nustatymai];
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=50068;
+                                                                ParentNodeID=[{771AEE1F-A5F3-4CA7-84FA-24C4BE1E693E}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{00000000-0000-0000-0000-000000000000}];
+                                                                DepartmentCategory=Administration }
+    { MenuItem       ;[{2429C419-BEE4-4438-BA49-53E80E85FE95}] ;Name=Pieno tyrimų kortelė;
+                                                                CaptionML=ENU=Pieno tyrimų duomenys;
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=50069;
+                                                                ParentNodeID=[{CDFDDF2B-D369-47C6-A7F2-919FC8C77606}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{00000000-0000-0000-0000-000000000000}];
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{9025E368-DF10-4758-BD0A-AE40D6E80095}] ;Name=Papildomo AM nustatymai;
+                                                                CaptionML=[ENU=Papildomo AM nustatymai;
+                                                                           LTH=Papildomo AM nustatymai];
+                                                                MemberOfMenu=[{9BA3319C-3EA0-454B-BD02-A59FCBC7B743}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=17025681;
+                                                                ParentNodeID=[{35B0FEBE-C774-4799-94B3-4B28DEBBA2A1}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{8C2A8245-5467-46DD-9FF5-3205F8F34277}];
+                                                                DepartmentCategory=Administration }
+    {                ;[{F3865BA3-3602-4645-966F-A5B50333335B}] ;NextNodeID=[{9025E368-DF10-4758-BD0A-AE40D6E80095}] }
+    {                ;[{53E23D36-EC1B-49D8-B273-7B3046E6FEAA}] ;NextNodeID=[{AA04793B-DA7D-4B22-8A0C-B6CA8BCEBEB0}] }
+    { MenuItem       ;[{AA04793B-DA7D-4B22-8A0C-B6CA8BCEBEB0}] ;Name=Prod. BOM Card;
+                                                                CaptionML=[ENU=Prod. BOM Card;
+                                                                           LTH=Gamybos KS kortelė];
+                                                                MemberOfMenu=[{4444D15F-6F71-4058-A823-C35BD171B04A}];
+                                                                RunObjectType=Report;
+                                                                RunObjectID=50002;
+                                                                ParentNodeID=[{6A94D518-4EBE-4CC3-84DC-7A23AAC92C11}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{00000000-0000-0000-0000-000000000000}];
+                                                                DepartmentCategory=Reports and Analysis }
+    {                ;[{F13AED47-D02D-44AF-ADE1-A2DDE5F65CE0}] ;NextNodeID=[{6FCC0ED6-56AD-412C-AD4D-2A63FDD830F9}] }
+    { MenuItem       ;[{6FCC0ED6-56AD-412C-AD4D-2A63FDD830F9}] ;Name=Savikainos apskaičiavimas;
+                                                                CaptionML=[ENU=Cost Calculation;
+                                                                           LTH=Savikainos apskaičiavimas];
+                                                                MemberOfMenu=[{4444D15F-6F71-4058-A823-C35BD171B04A}];
+                                                                RunObjectType=Report;
+                                                                RunObjectID=17015796;
+                                                                ParentNodeID=[{6F095F98-A9E6-4451-AFF7-D09F85146865}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{00000000-0000-0000-0000-000000000000}];
+                                                                DepartmentCategory=Reports and Analysis }
+    {                ;[{AD63050D-FEDC-4EE2-AB65-554D5B606E23}] ;NextNodeID=[{A886A03B-6F25-48B6-85E8-4AFDDC32F4BF}] }
+    { MenuItem       ;[{A886A03B-6F25-48B6-85E8-4AFDDC32F4BF}] ;Name=Materialaus IT įsig. iššif.;
+                                                                CaptionML=[ENU=Tangible Asset Purchasers;
+                                                                           LTH=Materialaus IT įsig. iššif.];
+                                                                MemberOfMenu=[{F8D2429D-034B-4C58-9B5E-81BE962DB1BC}];
+                                                                RunObjectType=Report;
+                                                                RunObjectID=17015797;
+                                                                ParentNodeID=[{CCE353D2-F1CE-445D-9A57-D54F71F0FC57}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{9B9C4DDF-0A38-4A61-9A9B-01181ED7F895}];
+                                                                DepartmentCategory=Reports and Analysis }
+    { MenuItem       ;[{9B9C4DDF-0A38-4A61-9A9B-01181ED7F895}] ;Name=Parduoto mat. IT įsig. iššif.;
+                                                                CaptionML=[ENU=Sold Tangible Asset Purchasers;
+                                                                           LTH=Parduoto mat. IT įsig. iššif.];
+                                                                MemberOfMenu=[{F8D2429D-034B-4C58-9B5E-81BE962DB1BC}];
+                                                                RunObjectType=Report;
+                                                                RunObjectID=17015798;
+                                                                ParentNodeID=[{CCE353D2-F1CE-445D-9A57-D54F71F0FC57}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{AD741D50-D578-4E1C-8BD9-89A8042A5161}];
+                                                                DepartmentCategory=Reports and Analysis }
+    { MenuItem       ;[{AD741D50-D578-4E1C-8BD9-89A8042A5161}] ;Name=Nurašyto mat. IT įsig. iššif.;
+                                                                CaptionML=[ENU=Written of Tang. Asset Purch.;
+                                                                           LTH=Nurašyto mat. IT įsig. iššif.];
+                                                                MemberOfMenu=[{F8D2429D-034B-4C58-9B5E-81BE962DB1BC}];
+                                                                RunObjectType=Report;
+                                                                RunObjectID=17015799;
+                                                                ParentNodeID=[{CCE353D2-F1CE-445D-9A57-D54F71F0FC57}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{00000000-0000-0000-0000-000000000000}];
+                                                                DepartmentCategory=Reports and Analysis }
+    { MenuItem       ;[{140C1939-B12E-4C10-92F8-B1BDE4D7C192}] ;Name=Customer/Item Sales;
+                                                                CaptionML=[ENU=Customer/Item Sales NEW;
+                                                                           LTH=Pirkėjas / prekės pardavimas (Nauja)];
+                                                                MemberOfMenu=[{F8D2429D-034B-4C58-9B5E-81BE962DB1BC}];
+                                                                RunObjectType=Report;
+                                                                RunObjectID=17015794;
+                                                                ParentNodeID=[{6938AB07-2029-49F6-8871-C152729F1F0C}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{2019B368-FCFF-4696-9672-05DC54D1225F}];
+                                                                DepartmentCategory=Reports and Analysis }
+    {                ;[{56B6AB80-BE4C-4A1A-B9D0-00EAB16FD1C4}] ;NextNodeID=[{140C1939-B12E-4C10-92F8-B1BDE4D7C192}] }
+    { MenuItem       ;[{9133E2E1-D335-401A-ACE9-B34A30E22035}] ;Name=Customer/Item Sales;
+                                                                CaptionML=[ENU=Customer/Item Sales NEW;
+                                                                           LTH=Pirkėjas / prekės pardavimas (Nauja)];
+                                                                MemberOfMenu=[{2DC8C4FE-7346-4124-8C20-383346384C03}];
+                                                                RunObjectType=Report;
+                                                                RunObjectID=17015794;
+                                                                ParentNodeID=[{8BADFB4A-B870-4BFE-A7A0-21D18C66C0A5}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{B31970C0-8604-4F2B-9F56-FD4F2CD88EAC}];
+                                                                DepartmentCategory=Reports and Analysis }
+    {                ;[{6A91046E-8DDF-49CF-BB98-FA0D47AAD407}] ;NextNodeID=[{9133E2E1-D335-401A-ACE9-B34A30E22035}] }
+    { MenuItem       ;[{C40D1B98-F4B0-4AF4-BD6F-ABF8A57BD924}] ;Name=Customer/Item Sales;
+                                                                CaptionML=[ENU=Customer/Item Sales NEW;
+                                                                           LTH=Pirkėjas / prekės pardavimas (Nauja)];
+                                                                MemberOfMenu=[{2DC8C4FE-7346-4124-8C20-383346384C03}];
+                                                                RunObjectType=Report;
+                                                                RunObjectID=17015794;
+                                                                ParentNodeID=[{2F8BD980-1A1C-4E79-B9A5-1E3DC4FFB7F0}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{796B0C90-8CB8-44BD-A001-43C30347139B}];
+                                                                DepartmentCategory=Reports and Analysis }
+    {                ;[{7D64D2FE-AFD7-4F88-BB9E-554670860B0A}] ;NextNodeID=[{C40D1B98-F4B0-4AF4-BD6F-ABF8A57BD924}] }
+    {                ;[{7FA05783-AE01-481F-BE09-A763B5DE9D4B}] ;NextNodeID=[{F2E2F57E-9600-43AF-AC73-8E419DCE701D}] }
+    { MenuItem       ;[{F2E2F57E-9600-43AF-AC73-8E419DCE701D}] ;Name=Tiekėjų apyvartos su PVM;
+                                                                CaptionML=[ENU=Vendor Turnover with VAT;
+                                                                           LTH=Tiekėjų apyvartos su PVM];
+                                                                MemberOfMenu=[{F8D2429D-034B-4C58-9B5E-81BE962DB1BC}];
+                                                                RunObjectType=Report;
+                                                                RunObjectID=17015795;
+                                                                ParentNodeID=[{51060E6F-D188-4B08-B76E-B3F17B5E8BE2}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{00000000-0000-0000-0000-000000000000}];
+                                                                DepartmentCategory=Reports and Analysis }
+    {                ;[{35574A0F-6FFD-479F-92BA-11FC65B4AF16}] ;NextNodeID=[{84F70753-EB78-43B5-B07F-604EE50C0BAB}] }
+    { MenuItem       ;[{84F70753-EB78-43B5-B07F-604EE50C0BAB}] ;Name=Production Report;
+                                                                CaptionML=[ENU=Production Report;
+                                                                           LTH=Gamybos ataskaita];
+                                                                MemberOfMenu=[{4444D15F-6F71-4058-A823-C35BD171B04A}];
+                                                                RunObjectType=Report;
+                                                                RunObjectID=17015790;
+                                                                ParentNodeID=[{2BF5AC48-8162-4FD9-9717-E68CA090328E}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{056051AE-6AFD-4350-8B96-6DDE075DC311}];
+                                                                DepartmentCategory=Reports and Analysis }
+    {                ;[{D0930F3F-A837-434F-A178-0BFFE7DD7864}] ;NextNodeID=[{0AE4ECB0-3C1D-4BA3-B669-3357904D31F4}] }
+    { MenuGroup      ;[{0AE4ECB0-3C1D-4BA3-B669-3357904D31F4}] ;Name=Transport;
+                                                                CaptionML=[ENU=Transport;
+                                                                           LTH=Transportas];
+                                                                MemberOfMenu=[{8D5D65D8-68A2-4A84-9BCE-3742CEDA47BF}];
+                                                                ParentNodeID=[{8D5D65D8-68A2-4A84-9BCE-3742CEDA47BF}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{00000000-0000-0000-0000-000000000000}];
+                                                                FirstChild=[{D4DB7642-6166-4338-A65A-514B7D2C35EE}];
+                                                                IsDepartmentPage=Yes }
+    { MenuItem       ;[{D4DB7642-6166-4338-A65A-514B7D2C35EE}] ;Name=Transport Setup;
+                                                                CaptionML=[ENU=Transport Setup;
+                                                                           LTH=Nustatymai];
+                                                                MemberOfMenu=[{8D5D65D8-68A2-4A84-9BCE-3742CEDA47BF}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=50104;
+                                                                ParentNodeID=[{0AE4ECB0-3C1D-4BA3-B669-3357904D31F4}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{246EB35E-71FF-4AF7-8AAF-1827099E0493}];
+                                                                DepartmentCategory=Administration }
+    { MenuItem       ;[{246EB35E-71FF-4AF7-8AAF-1827099E0493}] ;Name=Transport Travel;
+                                                                CaptionML=[ENU=Transport Travel List;
+                                                                           LTH=Kelionės lapai];
+                                                                MemberOfMenu=[{8D5D65D8-68A2-4A84-9BCE-3742CEDA47BF}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=50105;
+                                                                ParentNodeID=[{0AE4ECB0-3C1D-4BA3-B669-3357904D31F4}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{9661D3D4-E0CA-40BA-8131-EFFB3A79042F}];
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{9661D3D4-E0CA-40BA-8131-EFFB3A79042F}] ;Name=Transport Card;
+                                                                CaptionML=[ENU=Transport List;
+                                                                           LTH=Autotransportas];
+                                                                MemberOfMenu=[{8D5D65D8-68A2-4A84-9BCE-3742CEDA47BF}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=50103;
+                                                                ParentNodeID=[{0AE4ECB0-3C1D-4BA3-B669-3357904D31F4}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{40E0F6FF-2913-4C53-B17B-65C7CB12DB7D}];
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{056051AE-6AFD-4350-8B96-6DDE075DC311}] ;Name=GU sunaudojimo kiekiai;
+                                                                CaptionML=[ENU=Prod. Order Consumption;
+                                                                           LTH=GU sunaudojimo kiekiai];
+                                                                MemberOfMenu=[{4444D15F-6F71-4058-A823-C35BD171B04A}];
+                                                                RunObjectType=Report;
+                                                                RunObjectID=17015793;
+                                                                ParentNodeID=[{2BF5AC48-8162-4FD9-9717-E68CA090328E}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{D5DE8870-C39C-4DF5-91AF-50FD784A7191}];
+                                                                DepartmentCategory=Reports and Analysis }
+    { MenuItem       ;[{D5DE8870-C39C-4DF5-91AF-50FD784A7191}] ;Name=Žaliav. sunaud. pagal gaminius;
+                                                                CaptionML=[ENU=Material Consumption by Prod.;
+                                                                           LTH=Žaliav. sunaud. pagal gaminius];
+                                                                MemberOfMenu=[{4444D15F-6F71-4058-A823-C35BD171B04A}];
+                                                                RunObjectType=Report;
+                                                                RunObjectID=17015792;
+                                                                ParentNodeID=[{2BF5AC48-8162-4FD9-9717-E68CA090328E}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{00000000-0000-0000-0000-000000000000}];
+                                                                DepartmentCategory=Reports and Analysis }
+    { MenuItem       ;[{40E0F6FF-2913-4C53-B17B-65C7CB12DB7D}] ;Name=Transport Fuel Cards;
+                                                                CaptionML=[ENU=Transport Fuel Cards;
+                                                                           LTH=Kuro kortelės];
+                                                                MemberOfMenu=[{8D5D65D8-68A2-4A84-9BCE-3742CEDA47BF}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=50119;
+                                                                ParentNodeID=[{0AE4ECB0-3C1D-4BA3-B669-3357904D31F4}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{68118264-D844-4C4A-8D45-2354E63438FE}];
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{68118264-D844-4C4A-8D45-2354E63438FE}] ;Name=Transport Notifications;
+                                                                CaptionML=[ENU=Transport Notifications;
+                                                                           LTH=Piminimai];
+                                                                MemberOfMenu=[{8D5D65D8-68A2-4A84-9BCE-3742CEDA47BF}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=50120;
+                                                                ParentNodeID=[{0AE4ECB0-3C1D-4BA3-B669-3357904D31F4}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{C9391E4A-462D-408A-9892-E82D519DF819}];
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{C9391E4A-462D-408A-9892-E82D519DF819}] ;Name=Transport Notifications;
+                                                                CaptionML=[ENU=Transport Notification Codes;
+                                                                           LTH=Priminimų kodai];
+                                                                MemberOfMenu=[{8D5D65D8-68A2-4A84-9BCE-3742CEDA47BF}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=50116;
+                                                                ParentNodeID=[{0AE4ECB0-3C1D-4BA3-B669-3357904D31F4}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{7F08E5B2-531E-487D-A972-C9DB90DD08B6}];
+                                                                DepartmentCategory=Administration }
+    { MenuItem       ;[{E43D9897-A3B4-4E6D-BE64-793F14246032}] ;Name=Pristatyto pieno analizė;
+                                                                CaptionML=[ENU=Delivered Milk Analysis;
+                                                                           LTH=Pristatyto pieno analizė];
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Report;
+                                                                RunObjectID=17015791;
+                                                                ParentNodeID=[{CC63AAC0-46DB-4C84-8557-84761FFE19AB}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{0C6C4628-4F42-4FFC-8668-A2A82AF54841}];
+                                                                DepartmentCategory=Reports and Analysis }
+    { MenuItem       ;[{0C6C4628-4F42-4FFC-8668-A2A82AF54841}] ;Name=Pirkimo pajamavimo dokumentas;
+                                                                CaptionML=[ENU=Purchase/Acquistion Document;
+                                                                           LTH=Pirkimo pajamavimo dokumentas];
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Report;
+                                                                RunObjectID=17015800;
+                                                                ParentNodeID=[{CC63AAC0-46DB-4C84-8557-84761FFE19AB}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{B809E96B-71AF-4E59-9091-A3BFC4F5AF98}];
+                                                                DepartmentCategory=Reports and Analysis }
+    { MenuItem       ;[{B809E96B-71AF-4E59-9091-A3BFC4F5AF98}] ;Name=Processing & Production Report;
+                                                                CaptionML=[ENU=Processing & Production Report;
+                                                                           LTH=Perdirbimo ir gamybos ataskaita];
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Report;
+                                                                RunObjectID=17015801;
+                                                                ParentNodeID=[{CC63AAC0-46DB-4C84-8557-84761FFE19AB}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{13FB3812-E22E-45EA-A6D5-387248759A46}];
+                                                                DepartmentCategory=Reports and Analysis }
+    { MenuItem       ;[{13FB3812-E22E-45EA-A6D5-387248759A46}] ;Name=Žaliavų judėjimas;
+                                                                CaptionML=[ENU=Material Movement;
+                                                                           LTH=Žaliavų judėjimas];
+                                                                MemberOfMenu=[{7C71C767-83FB-4F9A-AB08-07D364AAFBA0}];
+                                                                RunObjectType=Report;
+                                                                RunObjectID=17015802;
+                                                                ParentNodeID=[{CC63AAC0-46DB-4C84-8557-84761FFE19AB}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{00000000-0000-0000-0000-000000000000}];
+                                                                DepartmentCategory=Reports and Analysis }
+    { MenuItem       ;[{7F08E5B2-531E-487D-A972-C9DB90DD08B6}] ;Name=Transporto KL analitika;
+                                                                CaptionML=[ENU=Transport travel analysis;
+                                                                           LTH=Transportavimo analitika];
+                                                                MemberOfMenu=[{8D5D65D8-68A2-4A84-9BCE-3742CEDA47BF}];
+                                                                RunObjectType=Report;
+                                                                RunObjectID=50086;
+                                                                ParentNodeID=[{0AE4ECB0-3C1D-4BA3-B669-3357904D31F4}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{A51D271C-0EFB-4356-9797-21DE3101705D}];
+                                                                DepartmentCategory=Reports and Analysis }
+    { MenuGroup      ;[{A51D271C-0EFB-4356-9797-21DE3101705D}] ;Name=Reports;
+                                                                CaptionML=[ENU=Reports;
+                                                                           LTH=Ataskaitos];
+                                                                MemberOfMenu=[{8D5D65D8-68A2-4A84-9BCE-3742CEDA47BF}];
+                                                                ParentNodeID=[{0AE4ECB0-3C1D-4BA3-B669-3357904D31F4}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{00000000-0000-0000-0000-000000000000}];
+                                                                FirstChild=[{A0A1D139-0ACF-4814-9DC2-700E99048F3C}];
+                                                                IsDepartmentPage=No }
+    { MenuItem       ;[{A0A1D139-0ACF-4814-9DC2-700E99048F3C}] ;Name=Detali autom. remonto analizė;
+                                                                CaptionML=[ENU=Transport maintenance analysis;
+                                                                           LTH=Detali autom. remonto analizė];
+                                                                MemberOfMenu=[{8D5D65D8-68A2-4A84-9BCE-3742CEDA47BF}];
+                                                                RunObjectType=Report;
+                                                                RunObjectID=50087;
+                                                                ParentNodeID=[{A51D271C-0EFB-4356-9797-21DE3101705D}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{00000000-0000-0000-0000-000000000000}];
+                                                                DepartmentCategory=Reports and Analysis }
+  }
+}
